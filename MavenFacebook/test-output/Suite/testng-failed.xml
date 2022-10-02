@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="classes" name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testpackage.TestngFacebook">
+        <methods>
+          <include name="removePOMObjects"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="beforeMethod"/>
+          <include name="verifyHelpCentreButton"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testpackage.TestngFacebook -->
+      <class name="testpackage.TestNgLoginPage">
+        <methods>
+          <include name="removePOMObjects"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="beforeMethod"/>
+          <include name="verifycreateNewAcc"/>
+          <include name="launchBrowser"/>
+          <include name="createPOMObjects"/>
+        </methods>
+      </class> <!-- testpackage.TestNgLoginPage -->
+      <class name="testpackage.TestNgCreateNewAccount">
+        <methods>
+          <include name="verifycreateNewAcc"/>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="logout"/>
+          <include name="removePOMObjects"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testpackage.TestNgCreateNewAccount -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
