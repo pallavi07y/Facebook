@@ -32,14 +32,14 @@ public class TestClassFacebook {
 		String url= driver.getCurrentUrl();
 		String title=driver.getTitle();
 		
-		if(url.equals("https://www.messenger.com/") && title.equals("Messenger"))
-		{
-			System.out.println("PASS");
-		}
-		else
-		{
-			System.out.println("FAIL");
-		}
+//		if(url.equals("https://www.messenger.com/") && title.equals("Messenger"))
+//		{
+//			System.out.println("PASS");
+//		}
+//		else
+//		{
+//			System.out.println("FAIL");
+//		}
 	}
 
 }
